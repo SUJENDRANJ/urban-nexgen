@@ -375,35 +375,36 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+
     <script src="./contact.js" type="text/javascript"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script>
-      emailjs.init("Uj04tizR2IC2We1vt"); // ✅ Use your public key
+      emailjs.init("Uj04tizR2IC2We1vt"); // Your public key
 
       document
-        .getElementById("booking-form")
+        .getElementById("email-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
 
           const formData = {
-            full_name: document.getElementById("fullName").value,
-            company_name: document.getElementById("companyName").value,
-            phone: document.getElementById("phone").value,
-            email: document.getElementById("email").value,
-            pickup: document.getElementById("pickup").value,
-            drop: document.getElementById("drop").value,
-            travel_date: document.getElementById("travelDate").value,
-            notes: document.getElementById("notes").value,
+            full_name: document.getElementById("full_name").value,
+            company_name: document.getElementById("company_name").value,
+            phone: document.getElementById("phone_number").value,
+            email: document.getElementById("email_id").value,
+            pickup: document.getElementById("pickup_location").value,
+            drop: document.getElementById("drop_location").value,
+            travel_date: document.getElementById("travel_date").value,
+            notes: document.getElementById("additional_notes").value,
           };
 
-          emailjs.send("service_5uek3pe", "template_l9k3df3", formData).then(
+          emailjs.send("service_rsfgpzn", "template_l9k3df3", formData).then(
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
               document.querySelector(".w-form-done").style.display = "block";
               document.querySelector(".w-form-fail").style.display = "none";
-              document.getElementById("booking-form").reset();
+              document.getElementById("email-form").reset();
             },
             function (error) {
               console.log("FAILED...", error);
