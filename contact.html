@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Mon Oct 07 2024 14:08:15 GMT+0000 (Coordinated Universal Time) -->
 <html
-  data-wf-domain="spacekit-template.webflow.io"
+  data-wf-domain="urbanvoyage.com"
   data-wf-page="66ec6afe3cc26899cbbb3018"
   data-wf-site="66ec6afe3cc26899cbbb300a"
   lang="en"
@@ -9,45 +9,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Urban Voyage</title>
-    <meta
-      content="Elevate Your Business with  - A Free Webflow Template. Featuring CMS functionality and sleek animations, Entropy offers customizable layouts across 12 pages. Build your digital presence with ease and engage customers in style."
-      name="description"
-    />
-    <meta content=" - Webflow HTML website template" property="og:title" />
-    <meta
-      content="Elevate Your Business with  - A Free Webflow Template. Featuring CMS functionality and sleek animations, Entropy offers customizable layouts across 12 pages. Build your digital presence with ease and engage customers in style."
-      property="og:description"
-    />
-    <meta
-      content="https://cdn.prod.website-files.com/66ec6afe3cc26899cbbb300a/66eef805cadb8c125e36ce84_Opengraph%20SpaceKit.jpg"
-      property="og:image"
-    />
-    <meta content=" - Webflow HTML website template" property="twitter:title" />
-    <meta
-      content="Elevate Your Business with  - A Free Webflow Template. Featuring CMS functionality and sleek animations, Entropy offers customizable layouts across 12 pages. Build your digital presence with ease and engage customers in style."
-      property="twitter:description"
-    />
-    <meta
-      content="https://cdn.prod.website-files.com/66ec6afe3cc26899cbbb300a/66eef805cadb8c125e36ce84_Opengraph%20SpaceKit.jpg"
-      property="twitter:image"
-    />
-    <meta property="og:type" content="website" />
-    <meta content="summary_large_image" name="twitter:card" />
+
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Webflow" name="generator" />
 
     <link href="./index.css" rel="stylesheet" type="text/css" />
     <link href="./style.css" rel="stylesheet" type="text/css" />
 
-    <link
-      href="https://cdn.prod.website-files.com/68807ff0204b3738dba8ab66/68807ff0204b3738dba8ac46_Favicon.jpg"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.prod.website-files.com/68807ff0204b3738dba8ab66/68807ff0204b3738dba8ac47_Webclip.jpg"
-      rel="apple-touch-icon"
-    />
+    <link href="./images/logo.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="./images/logo.png" rel="apple-touch-icon" />
   </head>
   <body>
     <div
@@ -128,86 +97,123 @@
         <div class="w-layout-blockcontainer container small w-container">
           <div class="contact-wrapper">
             <div class="hero-component">
-              <div
-                data-w-id="c00620c6-d1fd-d318-c2ad-334f18eed9a7"
-                style="opacity: 0"
-                class="max-width-60ch-2"
-              >
-                <div class="heading-2">Have questions or need support?</div>
+              <div class="max-width-60ch-2">
+                <div class="heading-2">Book Your Ride</div>
               </div>
             </div>
-            <div
-              data-w-id="c00620c6-d1fd-d318-c2ad-334f18eed9aa"
-              style="opacity: 0"
-              class="form-wrapper w-form"
-            >
-              <form
-                id="email-form"
-                name="email-form"
-                data-name="Email Form"
-                method="get"
-                class="form"
-                data-wf-page-id="68807ff0204b3738dba8abb4"
-                data-wf-element-id="c00620c6-d1fd-d318-c2ad-334f18eed9ab"
-              >
+
+            <div class="form-wrapper w-form">
+              <form id="email-form" name="email-form" class="form">
                 <div class="form-content">
                   <div class="name-wrapper-contact">
-                    <label for="Name" class="text-size-medium-vw">Name</label
-                    ><input
+                    <label for="full_name">Full Name</label>
+                    <input
                       class="text-field-contact w-input"
-                      maxlength="256"
-                      name="Name"
-                      data-name="Name"
-                      placeholder="Enter your name"
                       type="text"
-                      id="Name"
-                      required=""
+                      id="full_name"
+                      name="full_name"
+                      placeholder="Enter your full name"
+                      required
                     />
                   </div>
+
                   <div class="name-wrapper-contact">
-                    <label for="Enter-Your-Email" class="text-size-medium-vw"
-                      >E-mail</label
-                    ><input
+                    <label for="company_name">Company Name</label>
+                    <input
                       class="text-field-contact w-input"
-                      maxlength="256"
-                      name="Enter-Your-Email"
-                      data-name="Enter Your Email"
-                      placeholder="Enter your e-mail"
-                      type="email"
-                      id="Enter-Your-Email"
-                      required=""
+                      type="text"
+                      id="company_name"
+                      name="company_name"
+                      placeholder="Enter your company name"
                     />
                   </div>
-                  <label for="Text-Field" class="text-size-medium-vw"
-                    >Message</label
-                  ><textarea
-                    id="Text-Field"
-                    name="Text-Field"
-                    maxlength="5000"
-                    data-name="Text Field"
-                    placeholder="Your message..."
+
+                  <div class="name-wrapper-contact">
+                    <label for="phone_number">Phone Number</label>
+                    <input
+                      class="text-field-contact w-input"
+                      type="tel"
+                      id="phone_number"
+                      name="phone_number"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+
+                  <div class="name-wrapper-contact">
+                    <label for="email_id">Email ID</label>
+                    <input
+                      class="text-field-contact w-input"
+                      type="email"
+                      id="email_id"
+                      name="email_id"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+
+                  <div class="name-wrapper-contact">
+                    <label for="pickup_location">Pickup Location</label>
+                    <input
+                      class="text-field-contact w-input"
+                      type="text"
+                      id="pickup_location"
+                      name="pickup_location"
+                      placeholder="Enter pickup location"
+                      required
+                    />
+                  </div>
+
+                  <div class="name-wrapper-contact">
+                    <label for="drop_location">Drop Location</label>
+                    <input
+                      class="text-field-contact w-input"
+                      type="text"
+                      id="drop_location"
+                      name="drop_location"
+                      placeholder="Enter drop location"
+                      required
+                    />
+                  </div>
+
+                  <div class="name-wrapper-contact">
+                    <label for="travel_date">Travel Date</label>
+                    <input
+                      class="text-field-contact w-input"
+                      type="date"
+                      id="travel_date"
+                      name="travel_date"
+                      required
+                    />
+                  </div>
+
+                  <label for="additional_notes">Additional Notes</label>
+                  <textarea
                     class="text-field-contact w-input"
+                    id="additional_notes"
+                    name="additional_notes"
+                    placeholder="Enter additional notes (optional)"
                   ></textarea>
                 </div>
+
                 <div class="contact-button align-center">
-                  <div class="relative">
-                    <div class="primary-button">
-                      <input
-                        type="submit"
-                        data-wait="Please wait..."
-                        class="submit-button w-button"
-                        value="Submit"
-                      />
-                      <div class="text-weight-medium caps">Submit</div>
-                    </div>
+                  <div class="primary-button">
+                    <input
+                      type="submit"
+                      class="submit-button w-button"
+                      value="Submit"
+                    />
+                    <div class="text-weight-medium caps">Submit</div>
                   </div>
                 </div>
               </form>
+
               <div class="success-message w-form-done">
                 <div class="text-size-contact">
-                  Thank you! Your submission has been received!
+                  Thank you! Your booking has been received.
                 </div>
               </div>
+
               <div class="error-message w-form-fail">
                 <div class="text-size-medium-contact">
                   Oops! Something went wrong while submitting the form.
@@ -371,42 +377,40 @@
     ></script>
     <script src="./contact.js" type="text/javascript"></script>
 
-    <!-- Load EmailJS v3 SDK (latest stable) -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script>
-      // Initialize with your PUBLIC key
-      emailjs.init("tttImP5ad_B34F6Ls");
+      emailjs.init("Uj04tizR2IC2We1vt"); // ✅ Use your public key
 
-      // Form submission handler
       document
-        .getElementById("email-form")
+        .getElementById("booking-form")
         .addEventListener("submit", function (e) {
           e.preventDefault();
 
-          const name = document.getElementById("Name").value;
-          const email = document.getElementById("Enter-Your-Email").value;
-          const message = document.getElementById("Text-Field").value;
+          const formData = {
+            full_name: document.getElementById("fullName").value,
+            company_name: document.getElementById("companyName").value,
+            phone: document.getElementById("phone").value,
+            email: document.getElementById("email").value,
+            pickup: document.getElementById("pickup").value,
+            drop: document.getElementById("drop").value,
+            travel_date: document.getElementById("travelDate").value,
+            notes: document.getElementById("notes").value,
+          };
 
-          emailjs
-            .send("service_edt393e", "template_oddfa2g", {
-              name: name,
-              email: email,
-              message: message,
-            })
-            .then(
-              function (response) {
-                console.log("SUCCESS!", response.status, response.text);
-                document.querySelector(".w-form-done").style.display = "block";
-                document.querySelector(".w-form-fail").style.display = "none";
-                document.getElementById("email-form").reset();
-              },
-              function (error) {
-                console.log("FAILED...", error);
-                document.querySelector(".w-form-done").style.display = "none";
-                document.querySelector(".w-form-fail").style.display = "block";
-              }
-            );
+          emailjs.send("service_5uek3pe", "template_l9k3df3", formData).then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              document.querySelector(".w-form-done").style.display = "block";
+              document.querySelector(".w-form-fail").style.display = "none";
+              document.getElementById("booking-form").reset();
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              document.querySelector(".w-form-done").style.display = "none";
+              document.querySelector(".w-form-fail").style.display = "block";
+            }
+          );
         });
     </script>
   </body>
